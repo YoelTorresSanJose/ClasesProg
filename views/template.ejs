@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Título de tu sitio web</title>
     <link rel="stylesheet" href="assets/css/style.css">
-
+    <!-- <link rel="javaslider" href="assets/js/carrusel.js">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css"> -->
 </head>
 
 <body>
@@ -26,6 +30,24 @@
         <p>En este sitio podrás encontrar información sobre cursos, programas y eventos relacionados con la educación.
         </p>
         <button>Ver cursos</button>
+        <br>
+        
+        <table>
+            <tr>
+                <td>Nombre</td>
+                <td>Apellido</td>
+            </tr>
+            <% for (var i=0; i < users.length; i++) { %>
+                <tr>
+                    <td>
+                        <%= users[i].nombre %>
+                    </td>
+                    <td>
+                        <%= users[i].apellido %>
+                    </td>
+                </tr>
+                <% } %>
+        </table>
     </main>
 
     <footer>

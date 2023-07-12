@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mi Aplicación</title>
+  <!-- Agrega el enlace al archivo CSS de MaterializeCSS -->
+  <link rel="stylesheet" href="/assets/css/materialize.min.css">
+  <link rel="stylesheet" href="/assets/css/materialize.css">
+</head>
+<body>
+  <h1>Mi Aplicación</h1>
+  <div>
+    <!-- Aquí se insertará el contenido específico para cada vista -->
+    <%- include(`${content}`) %>
+  </div>
+
+  <!-- Agrega el enlace al archivo JavaScript de jQuery -->
+  <script src="/assets/js/materialize.js"></script>
+  <!-- Agrega el enlace al archivo JavaScript de MaterializeCSS -->
+  <script src="/assets/js/materialize.min.js"></script>
+</body>
+</html>
