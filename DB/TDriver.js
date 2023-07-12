@@ -9,7 +9,6 @@ const clases = {
 class TDriver {
 
     constructor(){
-        console.log(process.env.TYPE);
         this.link = new clases[process.env.TYPE]();
     }
 

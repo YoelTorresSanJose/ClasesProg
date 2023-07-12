@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Carousel / Slider con Glider.js</title>
-</head>
-
-<body>
 	<div class="contenedor">
 		<main class="contenido-principal">
 			<img src="/assets/img/1.png" alt="Dome of the German Bundestag" class="contenido-principal__imagen">
@@ -25,37 +16,81 @@
 		</main>
 
 		<!-- Aca va el carrusel -->
-		<div class="sub-conteiner">
+		<!-- <div class="carousel__contenedor">
 			<div class="sub-container-botones">
-				<button class="boton-izq">
+				<button class="carousel__anterior">
 					< </button>
-						<button class="boton-der">
+						<button class="carousel__siguiente">
 							>
 						</button>
 			</div>
-			<div class="sub-conteiner-img">
-				<li>
-					<ul>
-						<img src="/assets/img/1.png" alt="">
-					</ul>
-					<ul>
-						<img src="/assets/img/2.png" alt="">
-					</ul>
-					<ul>
-						<img src="/assets/img/3.png" alt="">
-					</ul>
-					<ul>
-						<img src="/assets/img/4.png" alt="">
-					</ul>
-				</li>
+			<div class="carousel__lista">
+				<div>
+					<img src="/assets/img/1.png" alt="">
+				</div>
+				<div>
+					<img src="/assets/img/2.png" alt="">
+				</div>
+				<div>
+					<img src="/assets/img/3.png" alt="">
+				</div>
+				<div>
+					<img src="/assets/img/4.png" alt="">
+				</div>
 			</div>
+			<div class="carousel__indicadores"></div>
 
 		</div>
+	</div> -->
+	<div class="carousel__contenedor">
+		<button aria-label="Anterior" class="carousel__anterior">
+			<i class="fas fa-chevron-left"></i>
+		</button>
+
+		<div class="carousel__lista">
+			<div class="carousel__elemento">
+				<img src="/assets/img/2.png" alt="Rock and Roll Hall of Fame">
+				<p>Rock and Roll Hall of Fame</p>
+			</div>
+			<div class="carousel__elemento">
+				<img src="/assets/img/3.png" alt="Constitution Square - Tower I">
+				<p>Constitution Square - Tower I</p>
+			</div>
+			<div class="carousel__elemento">
+				<img src="/assets/img/4.png" alt="Empire State Building">
+				<p>Empire State Building</p>
+			</div>
+			<div class="carousel__elemento">
+				<img src="/assets/img/5.png" alt="Harmony Tower">
+				<p>Harmony Tower</p>
+			</div>
+
+			<div class="carousel__elemento">
+				<img src="/assets/img/6.png" alt="Empire State Building">
+				<p>Empire State Building</p>
+			</div>
+			<div class="carousel__elemento">
+				<img src="/assets/img/7.png" alt="Harmony Tower">
+				<p>Harmony Tower</p>
+			</div>
+			<div class="carousel__elemento">
+				<img src="/assets/img/8.png" alt="Empire State Building">
+				<p>Empire State Building</p>
+			</div>
+			<div class="carousel__elemento">
+				<img src="/assets/img/9.png" alt="Harmony Tower">
+				<p>Harmony Tower</p>
+			</div>
+		</div>
+
+		<button aria-label="Siguiente" class="carousel__siguiente">
+			<i class="fas fa-chevron-right"></i>
+		</button>
 	</div>
 
-	<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
-	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-	<script src="/assets/js/carrusel.js"></script>
-</body>
+	<div role="tablist" class="carousel__indicadores"></div>
+</div>
 
-</html>
+<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+<script src="/assets/js/carrusel.js"></script>

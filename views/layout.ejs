@@ -5,10 +5,15 @@
   <!-- Agrega el enlace al archivo CSS de MaterializeCSS -->
   <link rel="stylesheet" href="/assets/css/materialize.min.css">
   <link rel="stylesheet" href="/assets/css/materialize.css">
+  <link rel="javaslider" href="/assets/js/carrusel.js">
+  <link rel="stylesheet" href="/assets/css/estilos.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
 </head>
 <body>
-  <h1>Mi Aplicación</h1>
-  <div>
+  <!-- <h1>Mi Aplicación</h1> -->
+  <div style="margin: auto;">
     <!-- Aquí se insertará el contenido específico para cada vista -->
     <%- include(`${content}`) %>
   </div>
@@ -17,5 +22,9 @@
   <script src="/assets/js/materialize.js"></script>
   <!-- Agrega el enlace al archivo JavaScript de MaterializeCSS -->
   <script src="/assets/js/materialize.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+  <script src="/assets/js/carrusel.js"></script>
 </body>
 </html>
